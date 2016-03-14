@@ -1,0 +1,7 @@
+<ul class="collapsible collapsible-accordion">
+  {% for section in site.data.docs %}
+    <li class="bold"><a class="collapsible-header waves-effect waves-teal">{{ section.title }}</a>
+    {% include doc_pages.html items=section.docs %}
+    </li>
+  {% endfor %}
+</ul>

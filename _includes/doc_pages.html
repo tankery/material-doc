@@ -1,0 +1,19 @@
+{% assign items = include.items %}
+
+<div class="collapsible-body" style="">
+  <ul>
+    {% for item in items %}
+      {% assign item_url = item | prepend:"/docs/" | append:"/" %}
+
+      {% if item_url == page.url %}
+        {% assign a = "active" %}
+      {% else %}
+        {% assign a = "" %}
+      {% endif %}
+
+      {% assign p = site.docs | where:"url",item_url | first %}
+      <li class="{{ a }}"><a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a></li>
+
+    {% endfor %}
+  </ul>
+</div>

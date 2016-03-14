@@ -7,13 +7,14 @@
 
     {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
+    <main>
+      <div class="container">
         {{ content }}
       </div>
-    </div>
+    </main>
 
     {% include footer.html %}
+    {% include delay-loads.html %}
 
   </body>
 
