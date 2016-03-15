@@ -7,16 +7,7 @@
       </div>
       <div class="col l4 offset-l2 s12">
         <h5 class="white-text">Social</h5>
-        <ul>
-          {% for social in site.socials %}
-            {% assign link = site.data.social-links[social.name] %}
-            {% if link %}
-              <li>
-                {% include social-link.html baseurl=link info=social %}
-              </li>
-            {% endif %}
-          {% endfor %}
-        </ul>
+        {% include social_list.html %}
       </div>
     </div>
   </div>

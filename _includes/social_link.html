@@ -1,0 +1,15 @@
+{% assign name=include.name %}
+{% assign user=include.user %}
+{% assign link=include.link %}
+{% assign style=include.style %}
+
+{% unless link %}
+  {% assign link = site.data.socials[name] %}
+{% endunless %}
+
+{% if link %}
+  <a class="{{ style }}" href="{{ link }}{{ user }}">
+    <i class="fa fa-{{ name }} left"></i>
+    {{ name | split: '-' | join: ' ' | capitalize_all }}
+  </a>
+{% endif %}

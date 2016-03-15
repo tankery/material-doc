@@ -42,3 +42,7 @@ ul.side-nav.fixed li:hover, ul.side-nav.fixed li:active, ul.side-nav.fixed li.ac
 ul.side-nav.fixed ul.collapsible-accordion {
     background-color: #fff;
 }
+
+i.fa.left, i.fa.right {
+  float: none !important;
+}
