@@ -22,6 +22,6 @@ For more details about site hosting (eg. Change site name, use your own domain, 
 
 ## Develop
 
-[material-doc]: http://tankery.me/material-doc/
+[material-doc]: http://tankery.github.io/material-doc/
 [material-doc-code]: https://github.com/tankery/material-doc
-[github-pages]: http://tankery.me/material-doc/
+[github-pages]: https://pages.github.com/
