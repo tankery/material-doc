@@ -1,11 +1,21 @@
-header, main, footer {
+body > header, body > main, body > footer {
   padding-left: 240px;
 }
 
 @media only screen and (max-width : 992px) {
-  header, main, footer {
+  body > header, body > main, body > footer {
     padding-left: 0;
   }
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 a.button-collapse.top-nav {
