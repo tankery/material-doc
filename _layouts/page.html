@@ -7,8 +7,15 @@ layout: default
     <h1 class="post-title">{{ page.title }}</h1>
   </header>
 
-  <div class="post-content flow-text">
-    {{ content }}
+  <div class="post-container">
+    <div class="row">
+      <div class="post-content flow-text col s12 m9 l10">
+        {{ content }}
+      </div>
+      <div class="col hide-on-small-only m3 l2">
+        <div class="table-of-contents section"></div>
+      </div>
+    </div>
   </div>
 
 </article>

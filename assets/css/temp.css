@@ -56,3 +56,7 @@ ul.side-nav.fixed ul.collapsible-accordion {
 i.fa.left, i.fa.right {
   float: none !important;
 }
+
+.table-of-contents {
+  min-width: 124px;
+}
