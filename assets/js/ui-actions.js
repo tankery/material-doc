@@ -1,8 +1,5 @@
 (function($){
-  $(function(){
-
-    var window_width = $(window).width();
-
+  $(document).ready(function(){
 
     // Detect touch screen and enable scrollbar if necessary
     function is_touch_device() {
@@ -21,7 +18,9 @@
     $('.post-container .table-of-contents').toc({
       title: '',
       listType: 'ul',
-      headers: '.post-content h2'
+      headers: '.post-content h2',
+      minimumHeaders: 2,
+      showEffect: 'slideDown'
     });
 
 

@@ -1,11 +1,15 @@
 
   <!-- Compiled and minified JQuery -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="{{ "/assets/js/jquery-2.2.2.min.js" | prepend: site.baseurl }}"></script>
   <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <!--
+    Changed from v0.97.5 to fix crash when us scrollspy.
+    See https://github.com/Dogfalo/materialize/commit/aa1a26abf2d868c26d7f353fa248f1597e94c223
+  -->
+  <script type="text/javascript" src="{{ "/assets/js/materialize-0.97.6.min.js" | prepend: site.baseurl }}"></script>
 
   <!-- JavaScript for TOC generator -->
-  <script src="{{ "/assets/js/toc.js" | prepend: site.baseurl }}"></script>
+  <script type="text/javascript" src="{{ "/assets/js/toc.js" | prepend: site.baseurl }}"></script>
 
   <!-- JavaScript for UI actions -->
-  <script src="{{ "/assets/js/ui-actions.js" | prepend: site.baseurl }}"></script>
+  <script type="text/javascript" src="{{ "/assets/js/ui-actions.js" | prepend: site.baseurl }}"></script>

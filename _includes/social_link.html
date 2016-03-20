@@ -8,8 +8,5 @@
 {% endunless %}
 
 {% if link %}
-  <a class="{{ style }}" href="{{ link }}{{ user }}">
-    <i class="fa fa-{{ name }} left"></i>
-    {{ name | split: '-' | join: ' ' | capitalize_all }}
-  </a>
+<a class="{{ style }}" href="{{ link }}{{ user }}"><i class="fa fa-{{ name }} left"></i>{% assign words = name | split: '-' %}{% for word in words %}{{ word | capitalize }} {% endfor %}</a>
 {% endif %}

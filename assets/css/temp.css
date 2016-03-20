@@ -18,6 +18,12 @@ main {
   flex: 1 0 auto;
 }
 
+@media only screen and (min-width: 993px) {
+  .container {
+      width: 85%;
+  }
+}
+
 a.button-collapse.top-nav {
   position:absolute;
   text-align:center;
