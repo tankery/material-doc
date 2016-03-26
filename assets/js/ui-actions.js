@@ -35,6 +35,9 @@
     // Pin toc to top.
     $('.post-container .table-of-contents').pushpin({ top: $('.table-of-contents').offset().top });
 
+    // Highlight code blocks
+    hljs.initHighlightingOnLoad();
+
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space

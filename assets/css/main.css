@@ -40,7 +40,7 @@ a.button-collapse.top-nav {
 ul.side-nav.fixed li.logo {
   text-align:center;
   margin-top:32px;
-  margin-bottom:80px;
+  margin-bottom:32px;
 }
 
 ul.side-nav.fixed li.logo:hover {
@@ -52,11 +52,11 @@ ul.side-nav.fixed {
 }
 
 ul.side-nav.fixed li:hover, ul.side-nav.fixed li:active, ul.side-nav.fixed li.active {
-    background-color: rgba(0,0,0,0.05);
+  background-color: rgba(0,0,0,0.05);
 }
 
 ul.side-nav.fixed ul.collapsible-accordion {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 i.fa.left, i.fa.right {
@@ -65,4 +65,10 @@ i.fa.left, i.fa.right {
 
 .table-of-contents {
   min-width: 124px;
+}
+
+pre {
+  padding: 1.25rem;
+  background: rgba(240, 240, 240, 0.8);
+  margin-bottom: 1.5625rem;
 }
