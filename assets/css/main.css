@@ -72,3 +72,7 @@ pre {
   background: rgba(240, 240, 240, 0.8);
   margin-bottom: 1.5625rem;
 }
+
+.doc-footer .doc-links li i {
+  vertical-align: middle;
+}
