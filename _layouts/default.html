@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+  {% include head.html styles=page.config.styles %}
 
   <body>
 
-    {% include header.html %}
+    <header>
+      {% unless page.config.disable_top_bar %}
+        {% include top_bar.html %}
+      {% endunless %}
+      {% include navigation.html %}
+    </header>
 
     <main>
-      <div class="container">
-        {{ content }}
-      </div>
+      {{ content }}
     </main>
 
     {% include footer.html %}

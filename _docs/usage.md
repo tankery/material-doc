@@ -18,6 +18,8 @@ For more details about site hosting (eg. Change site name, use your own domain, 
 
 ## Writing docs
 
+Markdown is the language you can use to write the docs.
+
 ## Custom Theme
 
 ## Develop

@@ -15,7 +15,6 @@ description: > # this means to ignore newlines until "baseurl:"
   A Material Designed Jekyll template for documentation site. Using structure
   from Jekyll Documentation, and style from Materialize.
 baseurl: "/material-doc" # the subpath of your site, e.g. /blog
-url: "http://tankery.me" # the base hostname & protocol for your site
 
 collections:
   docs:
@@ -34,4 +33,14 @@ kramdown:
   syntax_highlighter: rouge
 
 sass:
-  style: compressed
+  #style: compressed
+
+
+# Site styles
+
+palette:
+  primary: "#5c6bc0" # indigo, lighten-1
+  secondary: "#7986cb" # indigo lighten-2
+  tertiary: "#9fa8da" # indigo lighten-3
+  colored_text: "#c5cae9" # indigo lighten-4
+  highlight: "#f44336" # red

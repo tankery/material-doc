@@ -1,0 +1,17 @@
+---
+# Main stylesheets for site.
+---
+@charset "UTF-8";
+
+// Variables;
+@import "components/globalVars";
+
+$primary-color: {{ site.palette.primary }};
+$secondary-color: {{ site.palette.secondary }};
+$colored-text-color: {{ site.palette.colored_text }};
+$highlight-color: {{ site.palette.highlight }};
+
+@import "colors";
+@import "site";
+@import "post";
+@import "home";

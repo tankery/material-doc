@@ -33,7 +33,9 @@
     $('.post-content h2').scrollSpy();
 
     // Pin toc to top.
-    $('.post-container .table-of-contents').pushpin({ top: $('.table-of-contents').offset().top });
+    if ($('.post-container .table-of-contents').size() != 0) {
+      $('.post-container .table-of-contents').pushpin({ top: $('.table-of-contents').offset().top });
+    }
 
     // Highlight code blocks
     hljs.initHighlightingOnLoad();

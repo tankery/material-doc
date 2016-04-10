@@ -2,7 +2,7 @@ body > header, body > main, body > footer {
   padding-left: 240px;
 }
 
-@media only screen and (max-width : 992px) {
+@media #{$medium-and-down} {
   body > header, body > main, body > footer {
     padding-left: 0;
   }
@@ -18,7 +18,7 @@ main {
   flex: 1 0 auto;
 }
 
-@media only screen and (min-width: 993px) {
+@media #{$large-and-up} {
   .container {
       width: 85%;
   }
@@ -34,8 +34,8 @@ a.button-collapse.top-nav {
   font-size:32px;
   z-index:2;
 }
-@media only screen and (max-width: 600px){a.button-collapse.top-nav{left:5%;}}
-@media only screen and (max-width: 992px){nav .nav-wrapper{text-align:center;}}
+@media #{$small-and-down}{a.button-collapse.top-nav{left:5%;}}
+@media #{$medium-and-down}{nav .nav-wrapper{text-align:center;}}
 
 ul.side-nav.fixed li.logo {
   text-align:center;
@@ -63,16 +63,18 @@ i.fa.left, i.fa.right {
   float: none !important;
 }
 
-.table-of-contents {
-  min-width: 124px;
-}
-
-pre {
-  padding: 1.25rem;
-  background: rgba(240, 240, 240, 0.8);
-  margin-bottom: 1.5625rem;
-}
-
-.doc-footer .doc-links li i {
-  vertical-align: middle;
+.tooltip {
+  font-size: 10px;
+  padding: 8px;
+  color: white;
+  background-color: rgba(0,0,0,0.8);
+  box-sizing: border-box;
+  border-radius: 3px;
+  /* TODO: not in spec.; */
+  white-space: nowrap;
+  line-height: 6px;
+  z-index: 1002;
+  /* TODO: this is brittle.; */
+  -webkit-user-select: none;
+  user-select: none;
 }

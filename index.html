@@ -1,23 +1,43 @@
 ---
-layout: default
+layout: home
+
+subtitle: A Material Designed Jekyll template for doc site.
+slogan: Use Material Doc to build a fancy doc site in a minute.
+
+urls:
+  github: https://github.com/tankery/material-doc
+  get-started:
+
+strings:
+  fork: Fork me on GitHub
+  start: Get Started
+
+promos:
+  - icon: flash_on
+    caption: Speeds up development
+    content: >
+      Powered by the Materialize and Jekyll, Material Doc has a super simplified
+      project structure with great experience build in. With Github Pages
+      support, its distribution also becomes easy.
+  - icon: group
+    caption: User Experience Focused
+    content: >
+      By utilizing elements and principles of Material Design, we were able to
+      create a framework that incorporates components and animations that
+      provide more feedback to users. Additionally, a single underlying
+      responsive system across all platforms allow for a more unified user
+      experience.
+  - icon: settings
+    caption: Easy to work with
+    content: >
+      We have provided detailed documentation as well as specific code examples
+      to help new users get started. We are also always open to feedback and can
+      answer any questions a user may have about Materialize.
+
+motivation:
+  title: Start Using Material Doc
+  content: >
+    Checkout what people are creating with Materialize. Get inspired by these
+    beautiful sites and you can even submit your own website to be showcased
+    here.
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
