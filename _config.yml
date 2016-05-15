@@ -5,7 +5,8 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-# Site settings
+#####################
+# Site configs
 title: Material Doc
 owner:
   name: Tankery Chen
@@ -16,17 +17,32 @@ description: > # this means to ignore newlines until "baseurl:"
   from Jekyll Documentation, and style from Materialize.
 baseurl: "/material-doc" # the subpath of your site, e.g. /blog
 
-collections:
-  docs:
-    output: true
-
+# Specific social links, now we support following social account:
+# github, twitter, weibo, google-plus, instagram, facebook, stack-overflow
+# To support more social links, edit url in _data/socials.yml
+# Remenber, always use a name that support by Font Awesome, to make sure the
+# icon is shown.
 socials:
   - name: github
     user: tankery
   - name: stack-overflow
     user: 1038900
 
+#####################
+# Site styles
+palette:
+  primary: "#5c6bc0" # indigo, lighten-1
+  secondary: "#7986cb" # indigo lighten-2
+  tertiary: "#9fa8da" # indigo lighten-3
+  colored_text: "#c5cae9" # indigo lighten-4
+  highlight: "#f44336" # red
+
+#####################
 # Build settings
+collections:
+  docs:
+    output: true
+
 markdown: kramdown
 kramdown:
   input: GFM
@@ -34,13 +50,3 @@ kramdown:
 
 sass:
   #style: compressed
-
-
-# Site styles
-
-palette:
-  primary: "#5c6bc0" # indigo, lighten-1
-  secondary: "#7986cb" # indigo lighten-2
-  tertiary: "#9fa8da" # indigo lighten-3
-  colored_text: "#c5cae9" # indigo lighten-4
-  highlight: "#f44336" # red
