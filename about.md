@@ -4,12 +4,15 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Material Doc is a Material Designed Jekyll template for documentation site. Developed by [Tankery Chen][tankery], an App Creator.
 
-You can find the source code for the Jekyll new theme at:
-{% include social_link.html name="github" user="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+If you know Chinese, or been interesting on it, take a look at Tankery's Blog - [Fly the Code][tankery-blog].
 
-You can find the source code for Jekyll at
-{% include social_link.html name="github" user="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+You can find the source code for the Material Doc at:
+{% include social_link.html name="github" user="tankery" %} /
+[material-doc](https://github.com/tankery/material-doc)
+
+Enjoy!
+
+[tankery]: http://tankery.me/
+[tankery-blog]: http://blog.tankery.me/
